@@ -1,0 +1,170 @@
+.sweet-list {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sweet-list h2 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.no-sweets {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.sweets-table {
+  overflow-x: auto;
+}
+
+.sweets-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.sweets-table th,
+.sweets-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.sweets-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sweet-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.sweet-category {
+  color: #666;
+  text-transform: capitalize;
+}
+
+.sweet-price {
+  font-weight: 500;
+  color: #667eea;
+}
+
+.quantity-badge {
+  background: #d4edda;
+  color: #155724;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.quantity-badge.out-of-stock {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.sweet-actions {
+  min-width: 200px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edit-button,
+.delete-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-button {
+  background: #17a2b8;
+  color: white;
+}
+
+.edit-button:hover {
+  background: #138496;
+  transform: translateY(-1px);
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+.restock-section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.restock-input {
+  width: 60px;
+  padding: 0.5rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.restock-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.restock-button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restock-button:hover {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .sweet-actions {
+    min-width: 150px;
+  }
+  
+  .action-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .restock-section {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .restock-input {
+    width: 100%;
+  }
+}
