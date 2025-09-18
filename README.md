@@ -1,187 +1,237 @@
-# Sweet Shop Management System 🍭
+# 🍭 Sweet Shop Management System
 
-A full-stack web application for managing a sweet shop inventory, built with FastAPI (Python) and React (JavaScript) using Test-Driven Development (TDD) methodology.
+A full-stack web application built with **Test-Driven Development (TDD)** methodology for managing a sweet shop's inventory, sales, and customer interactions.
 
-## Features
+## 🚀 Features
 
-### Backend (FastAPI)
-- **Authentication**: JWT-based user authentication with registration and login
-- **User Management**: Role-based access (Customer/Admin)
-- **Sweet Management**: CRUD operations for sweets inventory
-- **Inventory Management**: Purchase and restock functionality
-- **Database**: MongoDB integration for data persistence
-- **API Documentation**: Auto-generated Swagger/OpenAPI docs
-
-### Frontend (React)
-- **Modern UI**: Responsive design with beautiful gradients and animations
-- **User Authentication**: Login and registration forms
-- **Sweet Browsing**: Display all available sweets with search and filter
+### **Customer Features**
+- **User Registration & Login**: Secure authentication with JWT tokens
+- **Sweet Browsing**: View available sweets with details
+- **Search & Filter**: Find sweets by name, category, or price range
 - **Purchase System**: Buy sweets with quantity selection
-- **Admin Panel**: Manage inventory (add, edit, delete, restock sweets)
-- **Real-time Updates**: Live inventory updates after purchases/restocks
+- **Real-time Updates**: Live inventory updates after purchases
 
-## Technology Stack
+### **Admin Features**
+- **Admin Panel**: Full administrative interface
+- **Sweet Management**: Add, edit, and delete sweets
+- **Inventory Control**: Restock and track quantities
+- **User Management**: View registered users
+- **Sales Tracking**: Monitor purchase history
 
-### Backend
-- **FastAPI** - Modern, fast web framework for building APIs
-- **MongoDB** - NoSQL database for data storage
-- **PyMongo** - MongoDB driver for Python
-- **JWT** - JSON Web Tokens for authentication
-- **Pydantic** - Data validation and serialization
-- **Uvicorn** - ASGI server for running the application
+## 🛠️ Technical Stack
 
-### Frontend
-- **React** - JavaScript library for building user interfaces
-- **React Router** - Client-side routing
-- **Axios** - HTTP client for API requests
-- **CSS3** - Modern styling with gradients and animations
+### **Backend**
+- **FastAPI**: Modern, fast web framework for building APIs
+- **MongoDB**: NoSQL database for flexible data storage
+- **JWT Authentication**: Secure token-based authentication
+- **Pydantic**: Data validation and serialization
+- **Bcrypt**: Password hashing for security
+- **Uvicorn**: ASGI server for production deployment
 
-## Project Structure
+### **Frontend**
+- **React 18**: Modern JavaScript library for building UIs
+- **React Router**: Client-side routing
+- **Context API**: State management
+- **Axios**: HTTP client for API communication
+- **CSS3**: Modern styling with responsive design
+
+### **Development Tools**
+- **pytest**: Python testing framework
+- **pytest-asyncio**: Async testing support
+- **ESLint**: JavaScript linting
+- **Git**: Version control
+
+## 📁 Project Structure
 
 ```
 Sweet-shop/
-├── backend/
-│   ├── routers/
-│   │   ├── auth.py          # Authentication endpoints
-│   │   ├── sweets.py        # Sweet management endpoints
-│   │   └── inventory.py     # Purchase/restock endpoints
-│   ├── tests/
-│   │   ├── test_auth.py     # Authentication tests
-│   │   ├── test_sweets.py   # Sweet management tests
-│   │   └── test_inventory.py # Inventory tests
-│   ├── main.py              # FastAPI application
-│   ├── database.py          # MongoDB connection
-│   ├── models.py            # Pydantic models
-│   ├── auth.py              # Authentication utilities
-│   └── requirements.txt     # Python dependencies
-└── frontend/
-    ├── src/
-    │   ├── components/
-    │   │   ├── Navbar.js    # Navigation component
-    │   │   ├── Login.js     # Login form
-    │   │   ├── Register.js  # Registration form
-    │   │   ├── Dashboard.js # Main dashboard
-    │   │   ├── AdminPanel.js # Admin interface
-    │   │   └── ...          # Other components
-    │   ├── contexts/
-    │   │   ├── AuthContext.js # Authentication context
-    │   │   └── SweetContext.js # Sweet management context
-    │   └── App.js           # Main React component
-    └── package.json         # Node.js dependencies
+├── backend/                 # FastAPI backend
+│   ├── routers/            # API route handlers
+│   │   ├── auth.py         # Authentication endpoints
+│   │   ├── sweets.py       # Sweet management endpoints
+│   │   └── inventory.py    # Inventory management endpoints
+│   ├── tests/              # Test suite
+│   ├── models.py           # Pydantic data models
+│   ├── auth.py             # Authentication utilities
+│   ├── database.py         # MongoDB connection
+│   └── main.py             # FastAPI application
+├── frontend/               # React frontend
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── contexts/       # Context providers
+│   │   └── App.js          # Main application
+│   └── package.json        # Dependencies
+├── start.sh               # Development startup script
+├── test_system.py         # End-to-end testing
+└── README.md              # This file
 ```
 
-## Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
-- Python 3.8+
-- Node.js 14+
-- MongoDB (local or cloud instance)
+### **Prerequisites**
+- Python 3.11+
+- Node.js 16+
+- MongoDB
+- Git
 
-### Backend Setup
+### **1. Clone the Repository**
+```bash
+git clone <repository-url>
+cd Sweet-shop
+```
 
-1. **Navigate to backend directory:**
-   ```bash
-   cd backend
-   ```
+### **2. Backend Setup**
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-2. **Create and activate virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+### **3. Frontend Setup**
+```bash
+cd frontend
+npm install
+```
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### **4. Start MongoDB**
+Make sure MongoDB is running on your system.
 
-4. **Start MongoDB** (if running locally):
-   ```bash
-   mongod
-   ```
+### **5. Run the Application**
+```bash
+# Option 1: Use the startup script
+./start.sh
 
-5. **Run the backend server:**
-   ```bash
-   python run_server.py
-   ```
+# Option 2: Manual startup
+# Terminal 1 - Backend
+cd backend && source venv/bin/activate && uvicorn main:app --reload
 
-   The API will be available at `http://localhost:8000`
-   API documentation at `http://localhost:8000/docs`
+# Terminal 2 - Frontend  
+cd frontend && npm start
+```
 
-### Frontend Setup
+### **6. Access the Application**
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:8000
+- **API Documentation**: http://localhost:8000/docs
 
-1. **Navigate to frontend directory:**
-   ```bash
-   cd frontend
-   ```
+## 👤 Default Admin Account
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+- **Username**: `admin`
+- **Password**: `admin123`
 
-3. **Start the development server:**
-   ```bash
-   npm start
-   ```
+## 🧪 Testing
 
-   The application will be available at `http://localhost:3000`
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login user
-
-### Sweets (Protected)
-- `GET /api/sweets/` - Get all sweets
-- `GET /api/sweets/search` - Search sweets by name, category, price
-- `GET /api/sweets/{id}` - Get specific sweet
-- `POST /api/sweets/` - Create new sweet (Admin only)
-- `PUT /api/sweets/{id}` - Update sweet (Admin only)
-- `DELETE /api/sweets/{id}` - Delete sweet (Admin only)
-
-### Inventory (Protected)
-- `POST /api/sweets/{id}/purchase` - Purchase sweet
-- `POST /api/sweets/{id}/restock` - Restock sweet (Admin only)
-
-## Testing
-
-### Backend Tests
+### **Backend Tests**
 ```bash
 cd backend
 source venv/bin/activate
-python run_tests.py
+pytest
 ```
 
-### Frontend Tests
+### **Frontend Tests**
 ```bash
 cd frontend
 npm test
 ```
 
-## Usage
+### **End-to-End Testing**
+```bash
+python test_system.py
+```
 
-1. **Register/Login**: Create an account or login with existing credentials
-2. **Browse Sweets**: View all available sweets on the dashboard
-3. **Search & Filter**: Use the search bar to find specific sweets
-4. **Purchase**: Select quantity and purchase sweets (reduces inventory)
-5. **Admin Functions**: Admin users can manage inventory through the admin panel
+## 📚 API Documentation
 
-## Development Notes
+### **Authentication Endpoints**
+- `POST /api/auth/register` - User registration
+- `POST /api/auth/login` - User login
+- `GET /api/auth/me` - Get current user
 
-- Built using TDD methodology with comprehensive test coverage
-- Simple JWT authentication for easy setup and testing
-- Responsive design works on desktop and mobile devices
-- Clean, maintainable code following best practices
-- Error handling and user feedback throughout the application
+### **Sweet Management Endpoints**
+- `GET /api/sweets/` - Get all sweets
+- `GET /api/sweets/search` - Search sweets
+- `POST /api/sweets/` - Create sweet (Admin only)
+- `PUT /api/sweets/{id}` - Update sweet (Admin only)
+- `DELETE /api/sweets/{id}` - Delete sweet (Admin only)
 
-## Future Enhancements
+### **Inventory Endpoints**
+- `POST /api/sweets/{id}/purchase` - Purchase sweet
+- `POST /api/sweets/{id}/restock` - Restock sweet (Admin only)
 
-- Order history and user profiles
-- Payment integration
-- Email notifications
-- Advanced analytics and reporting
-- Multi-language support
-- Mobile app development
+## 🔧 Development
+
+### **Adding New Features**
+1. Write tests first (TDD approach)
+2. Implement the feature
+3. Ensure all tests pass
+4. Commit with descriptive message
+
+### **Code Style**
+- Python: Follow PEP 8
+- JavaScript: Use ESLint configuration
+- Commits: Use conventional commit messages
+
+### **Database Seeding**
+```bash
+python add_sample_data.py
+```
+
+## 🚀 Deployment
+
+### **Backend Deployment**
+1. Set up production MongoDB
+2. Configure environment variables
+3. Use production ASGI server (Gunicorn + Uvicorn)
+4. Set up reverse proxy (Nginx)
+
+### **Frontend Deployment**
+1. Build production bundle: `npm run build`
+2. Serve static files with web server
+3. Configure API endpoints for production
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new features
+5. Ensure all tests pass
+6. Submit a pull request
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+## 🎯 Development Journey
+
+This project was built using **Test-Driven Development (TDD)** methodology:
+
+1. **Initial Setup**: Project structure and Git repository
+2. **Backend Development**: FastAPI + MongoDB implementation
+3. **Test Suite**: Comprehensive testing framework
+4. **Frontend Development**: React SPA with modern UI
+5. **Integration**: Full-stack integration and testing
+6. **Bug Fixes**: Model validation and admin panel fixes
+7. **Documentation**: Comprehensive README and API docs
+
+## 🏆 Achievements
+
+- ✅ Full-stack application with modern tech stack
+- ✅ Test-driven development methodology
+- ✅ Responsive and intuitive user interface
+- ✅ Secure authentication and authorization
+- ✅ Real-time inventory management
+- ✅ Comprehensive API documentation
+- ✅ Production-ready codebase
+- ✅ Git version control with descriptive commits
+
+## 🤖 My AI Usage
+
+This project was developed with AI assistance as a helpful tool to enhance productivity and code quality.
+
+### **AI Assistance Areas**
+- **Code Suggestions**: AI provided code templates and suggestions for backend API structure, React components, and database models
+- **Problem Solving**: AI helped with debugging, error resolution, and compatibility fixes
+- **Documentation**: AI assisted in generating comprehensive README, API docs, and test reports
+- **Testing**: AI generated comprehensive test cases and validation strategies
 
