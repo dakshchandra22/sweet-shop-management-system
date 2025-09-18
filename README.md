@@ -185,6 +185,3 @@ npm test
 - Multi-language support
 - Mobile app development
 
-## License
-
-This project is created for educational purposes as part of a TDD kata exercise.
