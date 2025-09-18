@@ -189,17 +189,6 @@ python add_sample_data.py
 2. Serve static files with web server
 3. Configure API endpoints for production
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new features
-5. Ensure all tests pass
-6. Submit a pull request
-
-
-
 ## 🎯 Development Journey
 
 This project was built using **Test-Driven Development (TDD)** methodology:
