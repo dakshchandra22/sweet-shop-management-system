@@ -198,9 +198,7 @@ python add_sample_data.py
 5. Ensure all tests pass
 6. Submit a pull request
 
-## 📝 License
 
-This project is licensed under the MIT License.
 
 ## 🎯 Development Journey
 
