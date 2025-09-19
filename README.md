@@ -117,14 +117,32 @@ cd frontend && npm start
 
 ## 👤 Default Admin Account
 
+<img width="1440" height="900" alt="Screenshot 2025-09-19 at 10 00 35 AM" src="https://github.com/user-attachments/assets/020ddde7-2b36-4d7d-af85-8b63372b495a" />
 <img width="2880" height="1800" alt="Screenshot 2025-09-19 at 9 53 39 AM" src="https://github.com/user-attachments/assets/3948fe5f-2142-4d2d-921f-d9071784cb0c" />
 <img width="2880" height="1800" alt="Screenshot 2025-09-19 at 9 53 49 AM" src="https://github.com/user-attachments/assets/2cdbcf2b-d190-48e1-8e39-b9ba24878388" />
 <img width="2880" height="1800" alt="Screenshot 2025-09-19 at 9 53 55 AM" src="https://github.com/user-attachments/assets/587618f8-d309-478e-85a8-1195de203b98" />
-<img width="1440" height="900" alt="Screenshot 2025-09-19 at 10 00 35 AM" src="https://github.com/user-attachments/assets/020ddde7-2b36-4d7d-af85-8b63372b495a" />
+
 
 - **Username**: `admin`
 - **Password**: `admin123`
 
+## 👤 Useer Account
+
+<img width="1440" height="900" alt="Screenshot 2025-09-19 at 9 52 34 AM" src="https://github.com/user-attachments/assets/f9ff2d00-3194-477c-adcc-e429f42352fe" />
+<img width="1440" height="900" alt="Screenshot 2025-09-19 at 9 52 59 AM" src="https://github.com/user-attachments/assets/0bd523eb-f096-4c2d-952a-e991e82b8abc" />
+<img width="1440" height="900" alt="Screenshot 2025-09-19 at 9 53 04 AM" src="https://github.com/user-attachments/assets/30dadd8b-a545-49b0-89d1-171ca7a783b4" />
+<img width="1440" height="900" alt="Screenshot 2025-09-19 at 10 00 51 AM" src="https://github.com/user-attachments/assets/fd91f50a-ab22-488e-8d7a-45299681337f" />
+
+- **Username**: `daksh22`
+- **Password**: `daksh1234`
+- 
+**Registration Features:**
+- **Email Validation**: Ensures valid email format
+- **Username Uniqueness**: Prevents duplicate usernames
+- **Password Security**: Secure password hashing with bcrypt
+- **Automatic Login**: Users are automatically logged in after registration
+- **Role Assignment**: Regular users get customer access, specific usernames get admin access
+- 
 ## 🧪 Testing
 
 ### **Backend Tests**
