@@ -2,12 +2,12 @@
 
 A full-stack web application built with **Tes t-Driven Development (TDD)** methodology for managing a sweet shop's inventory, sales, and customer interactions.
 
-<img src="https://github.com/user-attachments/assets/ddb23849-9763-4606-9d88-aa0537b88e6d" width="300" alt="Login"> <img  src="https://github.com/user-attachments/assets/eef0b926-0ac7-4b42-9863-c227fee90a99"  width="300" alt="Register"> 
-<img src="https://github.com/user-attachments/assets/ce720015-1ae9-4698-8e5f-08676b417d1f" width="300" alt="Customer Dashboard">
+<img src="https://github.com/user-attachments/assets/ddb23849-9763-4606-9d88-aa0537b88e6d" width="500" alt="Login"> <img  src="https://github.com/user-attachments/assets/eef0b926-0ac7-4b42-9863-c227fee90a99"  width="500" alt="Register"> 
+<img src="https://github.com/user-attachments/assets/ce720015-1ae9-4698-8e5f-08676b417d1f" width="500" alt="Customer Dashboard">
 
-<img src="https://github.com/user-attachments/assets/d4af8214-027b-4f51-9270-1026cc09c5cf"  width="300" alt="Admin Dashboard"> <img src="https://github.com/user-attachments/assets/8553f6f7-b3a8-4815-b9e1-995825644e6a" width="300" alt="Add Sweet Modal"> <img src="https://github.com/user-attachments/assets/2c4c3001-1000-4be6-ae24-8f28382a886c" width="300" alt="Search Results">
+<img src="https://github.com/user-attachments/assets/d4af8214-027b-4f51-9270-1026cc09c5cf"  width="500" alt="Admin Dashboard"> <img src="https://github.com/user-attachments/assets/8553f6f7-b3a8-4815-b9e1-995825644e6a" width="500" alt="Add Sweet Modal"> <img src="https://github.com/user-attachments/assets/2c4c3001-1000-4be6-ae24-8f28382a886c" width="500" alt="Search Results">
 
-<img src="https://github.com/user-attachments/assets/86fd2438-e030-4933-8a4d-4cf0073c76be" width="300" alt="Product Grid">
+<img src="https://github.com/user-attachments/assets/86fd2438-e030-4933-8a4d-4cf0073c76be" width="500" alt="Product Grid">
 
 ## 🚀 Features
 
