@@ -117,6 +117,11 @@ cd frontend && npm start
 
 ## 👤 Default Admin Account
 
+<img width="2880" height="1800" alt="Screenshot 2025-09-19 at 9 53 39 AM" src="https://github.com/user-attachments/assets/3948fe5f-2142-4d2d-921f-d9071784cb0c" />
+<img width="2880" height="1800" alt="Screenshot 2025-09-19 at 9 53 49 AM" src="https://github.com/user-attachments/assets/2cdbcf2b-d190-48e1-8e39-b9ba24878388" />
+<img width="2880" height="1800" alt="Screenshot 2025-09-19 at 9 53 55 AM" src="https://github.com/user-attachments/assets/587618f8-d309-478e-85a8-1195de203b98" />
+<img width="1440" height="900" alt="Screenshot 2025-09-19 at 10 00 35 AM" src="https://github.com/user-attachments/assets/020ddde7-2b36-4d7d-af85-8b63372b495a" />
+
 - **Username**: `admin`
 - **Password**: `admin123`
 
@@ -127,6 +132,7 @@ cd frontend && npm start
 cd backend
 source venv/bin/activate
 pytest
+
 ```
 
 ### **Frontend Tests**
