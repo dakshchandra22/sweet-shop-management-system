@@ -56,6 +56,21 @@ cd Sweet-shop\ 3
 # Frontend: http://localhost:3000
 # Backend: http://localhost:8000
 ```
+### **Backend Setup**
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+### **Frontend Setup**
+```bash
+cd frontend
+npm install
+npm start
+```
 
 **🔑 Login Credentials:**
 - **Admin**: `admin` / `admin123` (Full access)
