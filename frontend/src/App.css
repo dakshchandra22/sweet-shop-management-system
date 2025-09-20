@@ -1,0 +1,72 @@
+/* App.css - Minimal styles for Bootstrap components */
+
+.app {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Custom styles for better integration with Bootstrap */
+.btn:hover {
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Message component */
+.message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #7b1fa2 0%, #512da8 100%);
+}
