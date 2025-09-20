@@ -99,12 +99,11 @@ npm start
 
 ## 🤖 How I Used AI Tools
 
-- **Frontend**: Used *Cursor AI* and *GitHub Copilot* for React components, authentication, and UI improvements  
-- **Backend**: Used *Claude* and *ChatGPT* to debug FastAPI routes, JWT auth, and MongoDB integration  
-- **Testing**: Generated and refined API & frontend test cases with *Claude*  
-- **Docs**: Structured `README.md`, setup guide, and project explanation using *Claude*  
-- **Debugging**: Fixed frontend–backend API connection issues and optimized password validation  
-- **TDD**: Implemented Test-Driven Development with *Claude* for category management feature
+- **Debugging backend:** Helped identify and fix issues in FastAPI routes, JWT authentication flow, and MongoDB integration, speeding up problem-solving without replacing core logic.  
+- **Frontend improvements:** Provided design suggestions, UI component ideas, and minor code snippets to enhance user experience and interface consistency.  
+- **Testing:** Fully assisted in generating and refining API and frontend test cases, including edge cases and TDD workflows, ensuring high test coverage and meaningful scenarios.  
+- **Documentation:** Assisted in structuring the README, setup guides, and overall project explanations to improve clarity, readability, and completeness.  
+- **Optimization & validation:** Suggested improvements for password validation, form handling, and API response handling, helping to make the application more robust.  
 
 ---
 
