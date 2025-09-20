@@ -1,6 +1,7 @@
 # 🍭 Sweet Shop Management System
 
-A full-stack web application built with **Tes t-Driven Development (TDD)** methodology for managing a sweet shop's inventory, sales, and customer interactions.
+A full-stack web application built with **Test-Driven Development (TDD)** methodology for managing a sweet shop's inventory, sales, and customer interactions.
+
 ## 🛠️ Admin
 <img src="https://github.com/user-attachments/assets/ddb23849-9763-4606-9d88-aa0537b88e6d" width="400" alt="Login"> <img src="https://github.com/user-attachments/assets/d4af8214-027b-4f51-9270-1026cc09c5cf"  width="400" alt="Admin Dashboard"> 
  <img src="https://github.com/user-attachments/assets/8553f6f7-b3a8-4815-b9e1-995825644e6a" width="400" alt="Add Sweet Modal">
@@ -10,7 +11,7 @@ A full-stack web application built with **Tes t-Driven Development (TDD)** metho
 ## 🛠️ User
 <img src="https://github.com/user-attachments/assets/ddb23849-9763-4606-9d88-aa0537b88e6d" width="400" alt="Login">  <img src="https://github.com/user-attachments/assets/eef0b926-0ac7-4b42-9863-c227fee90a99"  width="400" alt="Register"> 
 <img src="https://github.com/user-attachments/assets/ce720015-1ae9-4698-8e5f-08676b417d1f" width="400" alt="Customer Dashboard">  <img src="https://github.com/user-attachments/assets/86fd2438-e030-4933-8a4d-4cf0073c76be" width="400" alt="Product Grid"> <img src="https://github.com/user-attachments/assets/2c4c3001-1000-4be6-ae24-8f28382a886c" width="400" alt="Search Results">  
-- **User**: `daksh2004` / `Daksh@22` (Customer access)
+- **User**: `daksh22_new` / `TestPassword123!` (Customer access)
 
 ## 🚀 Features  
 
@@ -21,12 +22,12 @@ A full-stack web application built with **Tes t-Driven Development (TDD)** metho
 
 **Backend**: FastAPI + MongoDB + JWT + Pydantic + Bcrypt  
 **Frontend**: React 18 + Context API + Axios + Bootstrap  
-**Testing**: pytest + ESLint
+**Testing**: pytest + Jest + React Testing Library
 
 ## 📁 Project Structure
 
 ```
-Sweet-shop 3/
+Sweet-shop 7/
 ├── backend/                    # FastAPI Backend
 │   ├── models.py              # Data models
 │   ├── auth.py                # Authentication
@@ -34,13 +35,17 @@ Sweet-shop 3/
 │   ├── sweets.py              # Sweet management
 │   ├── routes.py              # API endpoints
 │   ├── main.py                # App entry point
-│   └── test_simple_tdd.py     # Tests
+│   ├── simple_categories.py   # TDD Categories
+│   ├── simple_routes.py       # TDD Routes
+│   └── tests/                 # Test suite
 ├── frontend/                  # React Frontend
 │   ├── src/components/        # React components
 │   ├── src/contexts/          # State management
+│   ├── src/__tests__/         # Frontend tests
 │   └── package.json           # Dependencies
-├── screenshots/               # App screenshots
+├── .github/workflows/         # CI/CD
 ├── start.sh                   # Startup script
+├── stop.sh                    # Stop script
 └── README.md                  # Documentation
 ```
 
@@ -54,7 +59,7 @@ Sweet-shop 3/
 ```bash
 # 1. Clone and setup
 git clone <repository-url>
-cd Sweet-shop\ 3
+cd Sweet-shop\ 7
 
 # 2. Start application
 ./start.sh
@@ -81,13 +86,14 @@ npm start
 
 **🔑 Login Credentials:**
 - **Admin**: `admin` / `admin123` (Full access)
-- **User**: `daksh2004` / `Daksh@22` (Customer access)
+- **User**: `daksh22_new` / `TestPassword123!` (Customer access)
 
 ## 📚 API Endpoints
 
 **Auth**: `POST /api/auth/register`, `POST /api/auth/login`  
 **Sweets**: `GET /api/sweets/`, `POST /api/sweets/` (Admin), `PUT /api/sweets/{id}` (Admin)  
-**Inventory**: `POST /api/sweets/{id}/purchase`, `POST /api/sweets/{id}/restock` (Admin)
+**Inventory**: `POST /api/sweets/{id}/purchase`, `POST /api/sweets/{id}/restock` (Admin)  
+**Categories**: `GET /api/categories`, `POST /api/categories` (Admin)
 
 ## 🤖 My AI Usage
 
@@ -98,6 +104,7 @@ npm start
 - **Testing**: Generated and refined API & frontend test cases with *Claude*  
 - **Docs**: Structured `README.md`, setup guide, and project explanation using *Claude*  
 - **Debugging**: Fixed frontend–backend API connection issues and optimized password validation  
+- **TDD**: Implemented Test-Driven Development with *Claude* for category management feature
 
 ---
 
@@ -105,4 +112,4 @@ npm start
 
 - **Impact**: Faster development, cleaner code, better learning  
 - **Responsible Use**: Reviewed & tested AI code before use, documented AI help  
-- **Key Learning**: AI is best for testing, docs, and debugging → core logic still needs human oversight  
+- **Key Learning**: AI is best for testing, docs, and debugging → core logic still needs human oversight
